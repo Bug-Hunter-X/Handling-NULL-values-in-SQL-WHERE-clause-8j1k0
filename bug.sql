@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE department = 'Sales' AND salary > 100000; -- This query might cause issues if the 'salary' column has NULL values.  Rows with NULL salaries will be excluded, even if they are in the 'Sales' department.  This could lead to inaccurate results.
